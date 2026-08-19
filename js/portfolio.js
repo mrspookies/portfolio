@@ -161,10 +161,18 @@
   }
 
   function submitToRelay(data) {
+    var payload = {
+      _subject: 'Spookies Workshop inquiry' + (data.project_title ? ' — ' + data.project_title : ''),
+      _template: 'table',
+      _replyto: data.email || '',
+    };
+    for (var key in data) {
+      if (data.hasOwnProperty(key)) payload[key] = data[key];
+    }
     return fetch('https://formsubmit.co/ajax/' + FORM_RELAY_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-      body: JSON.stringify(data),
+      body: JSON.stringify(payload),
     }).then(function (res) {
       return res.json().then(function (json) {
         if (!res.ok || (json && json.success === 'false')) {
