@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Black Box — Spookies Workshop</title>
+<meta name="description" content="A chronological log of development notes, tone diaries, and industry observations.">
+<link rel="stylesheet" href="../css/portfolio.css">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; media-src 'self' https:; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://bandcamp.com https://w.soundcloud.com; connect-src 'self' http://localhost:3123 https://formsubmit.co; object-src 'none'; base-uri 'self'">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="brand">PETE WICHER</a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+      <span></span>
+    </button>
+
+    <nav class="primary-nav" id="primary-nav">
+      <ul>
+        <li><a href="../index.html">Profile</a></li>
+        <li class="nav-item">
+          <button class="dropdown-toggle" aria-expanded="false" aria-controls="work-dropdown">
+            Work <span class="caret">&#9660;</span>
+          </button>
+          <ul class="dropdown" id="work-dropdown">
+            <li><a href="../work/audio.html">Audio</a></li>
+            <li><a href="../work/games.html">Games</a></li>
+            <li><a href="../work/video.html">Video</a></li>
+            <li><a href="https://mister-spookies.itch.io/project-log" target="_blank" rel="noopener">Code</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html" aria-current="page">The Black Box</a></li>
+        <li><a href="../offers/index.html">Offers &amp; Services</a></li>
+        <li><a href="../contact/index.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero wrap">
+    <p class="case-number">FILE 05 / THE BLACK BOX / RECOVERED LOGS</p>
+    <h1>The Black Box</h1>
+    <p class="hero-lede">
+      Retrieved, timestamped, unedited. Notes from inside active builds —
+      what worked, what didn't, and what the data actually said.
+    </p>
+  </section>
+
+  <hr class="tape-rule">
+
+  <section class="section wrap">
+    <p class="eyebrow" id="log-count" style="margin-bottom:1.5rem;">LOGS RETRIEVED: 0</p>
+    <div class="log-stack">
+      <!-- Populated by js/blackbox.js from GET /api/posts -->
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+<p class="footer-note">&copy; <span id="year"></span> Pete Wicher. All rights reserved.</p>
+    <nav class="footer-links">
+      <a href="../offers/index.html">Start a Project</a>
+      <a href="../black-box/index.html">The Black Box</a>
+      <a href="../contact/index.html">Contact</a>
+    </nav>
+    <nav class="footer-socials">
+      <a href="https://mister-spookies.itch.io/" target="_blank" rel="noopener">itch.io</a>
+      <a href="https://petewicher.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a>
+      <a href="https://www.youtube.com/@MisterSpookies" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://x.com/MisterSpookies" target="_blank" rel="noopener">X</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="../js/portfolio.js"></script>
+<script src="../js/blackbox.js"></script>
+</body>
+</html>

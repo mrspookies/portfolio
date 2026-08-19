@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start a Project — Spookies Workshop</title>
+<meta name="description" content="Single intake form — name, engagement type, budget, and timeline. Every offer, tier, and service begins here.">
+<link rel="stylesheet" href="../css/portfolio.css">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; media-src 'self' https:; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://bandcamp.com https://w.soundcloud.com; connect-src 'self' http://localhost:3123 https://formsubmit.co; object-src 'none'; base-uri 'self'">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="../index.html" class="brand">PETE WICHER</a>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+      <span></span>
+    </button>
+
+    <nav class="primary-nav" id="primary-nav">
+      <ul>
+        <li><a href="../index.html">Profile</a></li>
+        <li class="nav-item">
+          <button class="dropdown-toggle" aria-expanded="false" aria-controls="work-dropdown">
+            Work <span class="caret">&#9660;</span>
+          </button>
+          <ul class="dropdown" id="work-dropdown">
+            <li><a href="../work/audio.html">Audio</a></li>
+            <li><a href="../work/games.html">Games</a></li>
+            <li><a href="../work/video.html">Video</a></li>
+            <li><a href="https://mister-spookies.itch.io/project-log" target="_blank" rel="noopener">Code</a></li>
+          </ul>
+        </li>
+        <li><a href="../black-box/index.html">The Black Box</a></li>
+        <li><a href="../offers/index.html">Offers &amp; Services</a></li>
+        <li><a href="index.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero wrap">
+    <p class="case-number">FILE 07 / CONTACT / INTAKE</p>
+    <h1>Start a Project</h1>
+  </section>
+
+  <hr class="tape-rule">
+
+  <section class="section wrap">
+    <form class="form-shell" data-form="intake" action="http://localhost:3123/api/submissions" method="POST">
+      <input type="hidden" name="form" value="intake">
+
+      <div class="field">
+        <label for="name">Name / Studio Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name or studio banner" required>
+      </div>
+
+      <div class="field">
+        <label for="email">Contact Email</label>
+        <input type="email" id="email" name="email" placeholder="you@studio.com" required>
+      </div>
+
+      <div class="field">
+        <label for="project-title">Project Title</label>
+        <input type="text" id="project-title" name="project_title" placeholder="Name of your game or project" required>
+      </div>
+
+      <div class="field">
+        <label for="engagement">Engagement Type / Service Needed</label>
+        <select id="engagement" name="engagement" required>
+          <option value="">Select an engagement type</option>
+          <option>Tier I: Discovery Consultation</option>
+          <option>Tier II: Production Retainer</option>
+          <option>Tier III: Project Milestone</option>
+          <option>Individual Service (Audio, Sound Design, Cinematics, etc.)</option>
+          <option>Custom Co-Development / Revenue-Share Inquiry</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="timeline">Estimated Timeline / Target Window</label>
+        <input type="text" id="timeline" name="timeline" placeholder="e.g., Q4 2026, Steam Next Fest, Immediate start">
+      </div>
+
+      <div class="field">
+        <label for="budget">Estimated Budget Range</label>
+        <select id="budget" name="budget">
+          <option value="">Select a budget range</option>
+          <option>Under $1,000 (Audits / Small Scope)</option>
+          <option>$1,000 &ndash; $3,000 (Retainers / Mid-Scope)</option>
+          <option>$3,000 &ndash; $8,000+ (Full Milestones / OST)</option>
+          <option>Open to discussion / Royalty &amp; Revenue-Share Structure</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="project-details">Project Details / Message</label>
+        <textarea id="project-details" name="message" rows="5" placeholder="What are you building, what do you need help with, and any context for your target window or budget?" required></textarea>
+      </div>
+
+      <div class="field">
+        <label class="field-check" for="consent">
+          <input type="checkbox" id="consent" name="consent" required>
+          I understand this is an initial inquiry &mdash; not a binding quote,
+          offer, or contract.
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-block">Send Inquiry</button>
+      <p class="form-note form-status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+<p class="footer-note">&copy; <span id="year"></span> Pete Wicher. All rights reserved.</p>
+    <nav class="footer-links">
+      <a href="../offers/index.html">Start a Project</a>
+      <a href="../black-box/index.html">The Black Box</a>
+      <a href="../contact/index.html">Contact</a>
+    </nav>
+    <nav class="footer-socials">
+      <a href="https://mister-spookies.itch.io/" target="_blank" rel="noopener">itch.io</a>
+      <a href="https://petewicher.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a>
+      <a href="https://www.youtube.com/@MisterSpookies" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://x.com/MisterSpookies" target="_blank" rel="noopener">X</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="../js/portfolio.js"></script>
+</body>
+</html>

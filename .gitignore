@@ -1,0 +1,23 @@
+# Runtime / secrets
+server/
+mnt/
+*.log
+.DS_Store
+cookies.txt
+
+# Local editor junk
+.vscode/
+.idea/
+
+# Local Windows launcher artifacts
+*.lnk
+*.bat
+*.vbs
+
+# Not part of the published portfolio site
+SW_Web/
+admin/
+assets/data/
+offers/docs/
+*.wav
+*.odt
