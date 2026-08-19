@@ -51,8 +51,8 @@ body.sw-site::after {
 
 .sw-logo-frame img {
   display: block;
-  max-height: 120px;
-  width: auto;
+  width: min(42vw, 700px);
+  height: auto;
   filter: grayscale(1) contrast(1.05);
 }
 
@@ -322,6 +322,6 @@ body.sw-site::after {
     flex-direction: column;
   }
   .sw-logo-frame img {
-    max-height: 84px;
+    width: min(86vw, 420px);
   }
 }
