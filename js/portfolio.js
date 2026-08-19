@@ -145,7 +145,7 @@
    * GitHub Pages), the message is delivered through the free mail relay
    * instead, so the site's contact forms keep working when published.
    */
-  var FORM_RELAY_URL = 'mr.spookies.83@gmail.com';
+  var FORM_RELAY_URL = '84794364b6145988d88bb2b7737613ce';
 
   function submitToBackend(url, data) {
     return fetch(url, {
@@ -199,7 +199,7 @@
             form.reset();
           })
           .catch(function () {
-            if (FORM_RELAY_URL.indexOf('@') === -1) {
+            if (!FORM_RELAY_URL) {
               setStatus(status, 'Error: live relay not configured yet.', 'error');
               return;
             }
