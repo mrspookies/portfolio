@@ -183,6 +183,11 @@
     });
   }
 
+  function isLocalContext() {
+    var host = window.location.hostname;
+    return host === 'localhost' || host === '127.0.0.1' || host === '::1';
+  }
+
   function initFormModals() {
     var forms = document.querySelectorAll('.form-shell[data-form]');
     if (!forms.length) return;
@@ -197,7 +202,9 @@
         });
         setStatus(status, 'Transmitting...', '');
 
-        submitToBackend(form.action, data)
+        // On the published site the local backend is never reachable, so go
+        // straight to the mail relay — only local dev contexts try the server.
+        (isLocalContext() ? submitToBackend(form.action, data) : Promise.reject(new Error('published site')))
           .then(function (json) {
             setStatus(
               status,
