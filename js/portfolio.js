@@ -208,7 +208,7 @@
           .then(function (json) {
             setStatus(
               status,
-              'Transmission received — saved to backend as ' + json.file + '.',
+              'Message received — thank you. I\u2019ll reply soon.',
               'ok'
             );
             form.reset();
