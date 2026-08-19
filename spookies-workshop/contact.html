@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Spookies Workshop</title>
+<meta name="description" content="Contact Spookies Workshop — initial inquiry form for new projects, collaborations, and studio work.">
+<link rel="stylesheet" href="../css/portfolio.css">
+<link rel="stylesheet" href="sw.css">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; media-src 'self' https:; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://bandcamp.com https://w.soundcloud.com; connect-src 'self' http://localhost:3123 https://formsubmit.co; object-src 'none'; base-uri 'self'">
+</head>
+<body class="sw-site">
+
+<header class="sw-header">
+  <div class="sw-logo-frame">
+    <img src="../assets/image/STUDIO_LOGO_TRANSPARENT.png" alt="Spookies Workshop logo">
+  </div>
+  <nav class="sw-nav" aria-label="Studio">
+    <a href="index.html">Games</a>
+    <a href="index.html#collaborations">Collaborations</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="sw-hero">
+    <p class="sw-stamp"><span class="rec-dot" aria-hidden="true"></span> REC &mdash; SIGNAL: OPEN &mdash; DIRECT LINE</p>
+    <h1 class="sw-title">Contact the Studio</h1>
+    <p class="sw-tagline">
+      Send the details and the studio gets back to you. No phone trees, no
+      runaround &mdash; just a direct line to the work.
+    </p>
+  </section>
+
+  <hr class="sw-rule">
+
+  <section class="sw-section sw-form">
+    <form class="form-shell" data-form="intake" action="http://localhost:3123/api/submissions" method="POST">
+      <input type="hidden" name="form" value="intake">
+
+      <div class="field">
+        <label for="name">Name / Studio Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name or studio banner" required>
+      </div>
+
+      <div class="field">
+        <label for="email">Contact Email</label>
+        <input type="email" id="email" name="email" placeholder="you@studio.com" required>
+      </div>
+
+      <div class="field">
+        <label for="project-title">Project Title</label>
+        <input type="text" id="project-title" name="project_title" placeholder="Name of your game or project" required>
+      </div>
+
+      <div class="field">
+        <label for="engagement">Engagement Type / Service Needed</label>
+        <select id="engagement" name="engagement" required>
+          <option value="">Select an engagement type</option>
+          <option>Tier I: Discovery Consultation</option>
+          <option>Tier II: Production Retainer</option>
+          <option>Tier III: Project Milestone</option>
+          <option>Individual Service (Audio, Sound Design, Cinematics, etc.)</option>
+          <option>Custom Co-Development / Revenue-Share Inquiry</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="timeline">Estimated Timeline / Target Window</label>
+        <input type="text" id="timeline" name="timeline" placeholder="e.g., Q4 2026, Steam Next Fest, Immediate start">
+      </div>
+
+      <div class="field">
+        <label for="budget">Estimated Budget Range</label>
+        <select id="budget" name="budget">
+          <option value="">Select a budget range</option>
+          <option>Under $1,000 (Audits / Small Scope)</option>
+          <option>$1,000 &ndash; $3,000 (Retainers / Mid-Scope)</option>
+          <option>$3,000 &ndash; $8,000+ (Full Milestones / OST)</option>
+          <option>Open to discussion / Royalty &amp; Revenue-Share Structure</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="project-details">Project Details / Message</label>
+        <textarea id="project-details" name="message" rows="5" placeholder="What are you building, what do you need help with, and any context for your target window or budget?" required></textarea>
+      </div>
+
+      <div class="field">
+        <label class="field-check" for="consent">
+          <input type="checkbox" id="consent" name="consent" required>
+          I understand this is an initial inquiry &mdash; not a binding quote,
+          offer, or contract.
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-block">Transmit Inquiry</button>
+      <p class="form-note form-status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="sw-footer">
+  <p class="sw-stamp">END OF TRANSMISSION</p>
+  <nav class="sw-nav" aria-label="Studio footer">
+    <a href="https://mister-spookies.itch.io/" target="_blank" rel="noopener">itch.io</a>
+    <a href="https://petewicher.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a>
+    <a href="https://www.youtube.com/@MisterSpookies" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://x.com/MisterSpookies" target="_blank" rel="noopener">X</a>
+  </nav>
+  <p class="sw-msg" style="margin-top:1.25rem;">&copy; <span id="year"></span> Spookies Workshop. All rights reserved.</p>
+</footer>
+
+<script src="../js/portfolio.js"></script>
+</body>
+</html>

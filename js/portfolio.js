@@ -8,6 +8,7 @@
 
   document.addEventListener('DOMContentLoaded', function () {
     initYear();
+    initLiveStamp();
     initMobileNav();
     initDropdowns();
     initModals();
@@ -23,6 +24,18 @@
     if (yearEl) {
       yearEl.textContent = new Date().getFullYear();
     }
+  }
+
+  /**
+   * Stamp today's date (DD.MM.YYYY) into any #sw-time element (used on the
+   * Spookies Workshop site's REC timestamp).
+   */
+  function initLiveStamp() {
+    var el = document.getElementById('sw-time');
+    if (!el) return;
+    var now = new Date();
+    var pad = function (n) { return String(n).padStart(2, '0'); };
+    el.textContent = pad(now.getDate()) + '.' + pad(now.getMonth() + 1) + '.' + now.getFullYear();
   }
 
   /**

@@ -3,97 +3,188 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Spookies Workshop — Under Construction</title>
-<meta name="description" content="Spookies Workshop — studio site under construction.">
+<title>Spookies Workshop — Independent Game Studio</title>
+<meta name="description" content="Spookies Workshop — an independent game studio. Analog horror, atmosphere, and the work that gets under your skin. Egregore and more.">
 <link rel="stylesheet" href="../css/portfolio.css">
+<link rel="stylesheet" href="sw.css">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; media-src 'self' https:; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://bandcamp.com https://w.soundcloud.com; connect-src 'self' http://localhost:3123 https://formsubmit.co; object-src 'none'; base-uri 'self'">
 </head>
-<body>
+<body class="sw-site">
 
-<header class="site-header">
-  <div class="wrap">
-    <a href="../index.html" class="brand">PETE WICHER</a>
-
-    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
-      <span></span>
-    </button>
-
-    <nav class="primary-nav" id="primary-nav">
-      <ul>
-        <li><a href="../index.html">Profile</a></li>
-        <li class="nav-item">
-          <button class="dropdown-toggle" aria-expanded="false" aria-controls="work-dropdown">
-            Work <span class="caret">&#9660;</span>
-          </button>
-          <ul class="dropdown" id="work-dropdown">
-            <li><a href="../work/audio.html">Audio</a></li>
-            <li><a href="../work/games.html">Games</a></li>
-            <li><a href="../work/video.html">Video</a></li>
-            <li><a href="https://mister-spookies.itch.io/project-log" target="_blank" rel="noopener">Code</a></li>
-          </ul>
-        </li>
-        <li><a href="../black-box/index.html">The Black Box</a></li>
-        <li><a href="../offers/index.html">Offers &amp; Services</a></li>
-        <li><a href="../contact/index.html">Contact</a></li>
-        <li><a href="../spookies-workshop/index.html" aria-current="page">Spookies Workshop</a></li>
-      </ul>
-    </nav>
+<header class="sw-header">
+  <div class="sw-logo-frame">
+    <img src="../assets/image/STUDIO_LOGO_TRANSPARENT.png" alt="Spookies Workshop logo">
   </div>
+  <nav class="sw-nav" aria-label="Studio">
+    <a href="#games">Games</a>
+    <a href="#collaborations">Collaborations</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
 <main>
 
-  <section class="hero wrap">
-    <p class="case-number">FILE 99 / SPOOKIES WORKSHOP / STATUS: UNDER CONSTRUCTION</p>
-    <h1>Ground is being cleared.</h1>
-
-    <p class="hero-lede">
-      The Spookies Workshop studio site is coming soon. Site prep is
-      underway &mdash; foundations, framing, and interior work scheduled.
+  <section class="sw-hero">
+    <p class="sw-stamp"><span class="rec-dot" aria-hidden="true"></span> REC &mdash; SIGNAL: LIVE &mdash; <span id="sw-time">19.08.2026</span></p>
+    <h1 class="sw-title">Spookies Workshop</h1>
+    <p class="sw-tagline">
+      An independent game studio founded on analog horror, atmosphere, and the
+      work that gets under your skin.
     </p>
-    <p class="hero-lede">
-      While the site is being built, the best way to reach the studio is
-      through the contact form below.
-    </p>
-    <div class="btn-row" style="margin-top:2rem;">
-      <a class="btn" href="../contact/index.html">Start a Project &nearr;</a>
-      <a class="btn btn-ghost" href="../index.html">&larr; Back to Portfolio</a>
+    <p class="sw-msg">This tape is currently in circulation. New transmissions are added as they surface.</p>
+    <div class="sw-hero-actions">
+      <a class="btn" href="#games">View Games</a>
+      <a class="btn btn-ghost" href="contact.html">Contact the Studio</a>
     </div>
   </section>
 
-  <hr class="tape-rule">
+  <hr class="sw-rule">
 
-  <section class="section wrap">
-    <div class="section-head">
-      <h2>Site Map</h2>
-      <span class="eyebrow">EST. BUILD TIME: ONGOING</span>
+  <section class="sw-section" id="games">
+    <div class="sw-section-head">
+      <h2>Studio Games</h2>
+      <span class="sw-stamp">TAPE 01 &mdash; PERSONAL WORK</span>
     </div>
-    <ul class="checklist">
-      <li><span class="tick">&#9632;</span> Foundation poured &mdash; this page</li>
-      <li><span class="tick">&#9633;</span> Studio overview</li>
-      <li><span class="tick">&#9633;</span> Team &amp; collaborators</li>
-      <li><span class="tick">&#9633;</span> Services &amp; engagement</li>
-      <li><span class="tick">&#9633;</span> Client log</li>
-    </ul>
+
+    <article class="sw-card">
+      <div class="sw-card-head">
+        <h3>EGREGORE</h3>
+        <span class="sw-stamp">IN DEVELOPMENT</span>
+      </div>
+      <p>
+        The studio&rsquo;s flagship title. A horror experience built on withheld
+        information, layered fiction, and the kind of dread that stays in the
+        room after you close the game. Written, programmed, and directed under
+        the Spookies Workshop banner.
+      </p>
+      <div class="sw-embed">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/hIJ15Qz13aY"
+          title="EGREGORE — Reveal Trailer"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy"></iframe>
+      </div>
+      <div class="sw-links">
+        <a class="sw-link" href="https://store.steampowered.com/app/4255090/Egregore/" target="_blank" rel="noopener">Steam &nearr;</a>
+        <a class="sw-link" href="https://mister-spookies.itch.io/project-log" target="_blank" rel="noopener">Project_Log &nearr;</a>
+        <a class="sw-link" href="https://mister-spookies.itch.io/" target="_blank" rel="noopener">itch.io &nearr;</a>
+      </div>
+    </article>
+
+    <article class="sw-card">
+      <div class="sw-card-head">
+        <h3>PROJECT_LOG</h3>
+        <span class="sw-stamp">INTERACTIVE WEB TEASER</span>
+      </div>
+      <p>
+        An interactive web teaser for Egregore &mdash; a case file that
+        watches back. Explore the found documents, transmissions, and
+        fragments of the investigation that anchors the game&rsquo;s fiction.
+      </p>
+      <div class="sw-links">
+        <a class="sw-link" href="https://mister-spookies.itch.io/project-log" target="_blank" rel="noopener">Open Project_Log &nearr;</a>
+      </div>
+    </article>
+  </section>
+
+  <hr class="sw-rule">
+
+  <section class="sw-section" id="collaborations">
+    <div class="sw-section-head">
+      <h2>Collaborations</h2>
+      <span class="sw-stamp">TAPE 02 &mdash; OUTSIDE WORK</span>
+    </div>
+
+    <article class="sw-card">
+      <div class="sw-card-head">
+        <h3>PERPETUO</h3>
+        <span class="sw-stamp">NIGHTWOLF GAMES</span>
+      </div>
+      <p>
+        A compact psychological horror about loops, regret, and identity &mdash;
+        set in the same universe as Road to Hollow Hills. Music, sound,
+        cinematics, and programming.
+      </p>
+      <div class="sw-embed">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/3JHqe36iI8A"
+          title="Perpetuo — Release Trailer"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy"></iframe>
+      </div>
+      <div class="sw-links">
+        <a class="sw-link" href="https://store.steampowered.com/app/3445500/Perpetuo/" target="_blank" rel="noopener">Steam &nearr;</a>
+      </div>
+    </article>
+
+    <article class="sw-card">
+      <div class="sw-card-head">
+        <h3>TELLUS: ECHO OF THE VOID</h3>
+        <span class="sw-stamp">TERRAFORMING SURVIVAL</span>
+      </div>
+      <p>
+        A hostile world slowly made habitable &mdash; soundscapes, music, and
+        the cinematic cuts that sell a planet that doesn&rsquo;t want you on it.
+      </p>
+      <div class="sw-embed">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/Zt2p_K4s8q4"
+          title="Tellus: Echo of the Void — Release Trailer"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy"></iframe>
+      </div>
+      <div class="sw-links">
+        <a class="sw-link" href="https://store.steampowered.com/app/3204620/Tellus_Echo_of_the_Void/" target="_blank" rel="noopener">Steam &nearr;</a>
+      </div>
+    </article>
+
+    <article class="sw-card">
+      <div class="sw-card-head">
+        <h3>ROAD TO HOLLOW HILLS</h3>
+        <span class="sw-stamp">NIGHTWOLF GAMES</span>
+      </div>
+      <p>
+        An adventure survival horror RPG. Ride to survive, fight to win &mdash;
+        through the desolate National Park, the Shadowed Grove, and the town
+        that doesn&rsquo;t want to be found. Audio and atmospheric soundscapes.
+      </p>
+      <div class="sw-links">
+        <a class="sw-link" href="https://store.steampowered.com/app/1345270/Road_to_Hollow_Hills/" target="_blank" rel="noopener">Steam &nearr;</a>
+        <a class="sw-link" href="https://gamesnightwolf.itch.io/road-to-hollow-hills" target="_blank" rel="noopener">Demo on itch.io &nearr;</a>
+      </div>
+    </article>
+  </section>
+
+  <hr class="sw-rule">
+
+  <section class="sw-section">
+    <div class="sw-section-head">
+      <h2>Contact</h2>
+    </div>
+    <p>
+      Reaching the studio is a direct line &mdash; no phone trees, no runaround.
+      Send the project details and the studio gets back to you.
+    </p>
+    <div class="sw-hero-actions">
+      <a class="btn" href="contact.html">Open Contact Form &nearr;</a>
+      <a class="btn btn-ghost" href="../index.html">Portfolio &nearr;</a>
+    </div>
   </section>
 
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
-    <p class="footer-note">&copy; <span id="year"></span> Pete Wicher. All rights reserved.</p>
-    <nav class="footer-links">
-      <a href="../offers/index.html">Start a Project</a>
-      <a href="../black-box/index.html">The Black Box</a>
-      <a href="../contact/index.html">Contact</a>
-    </nav>
-    <nav class="footer-socials">
-      <a href="https://mister-spookies.itch.io/" target="_blank" rel="noopener">itch.io</a>
-      <a href="https://petewicher.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a>
-      <a href="https://www.youtube.com/@MisterSpookies" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://x.com/MisterSpookies" target="_blank" rel="noopener">X</a>
-    </nav>
-  </div>
+<footer class="sw-footer">
+  <p class="sw-stamp">END OF TRANSMISSION</p>
+  <nav class="sw-nav" aria-label="Studio footer">
+    <a href="https://mister-spookies.itch.io/" target="_blank" rel="noopener">itch.io</a>
+    <a href="https://petewicher.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a>
+    <a href="https://www.youtube.com/@MisterSpookies" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://x.com/MisterSpookies" target="_blank" rel="noopener">X</a>
+  </nav>
+  <p class="sw-msg" style="margin-top:1.25rem;">&copy; <span id="year"></span> Spookies Workshop. All rights reserved.</p>
 </footer>
 
 <script src="../js/portfolio.js"></script>
