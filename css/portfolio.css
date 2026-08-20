@@ -889,6 +889,68 @@ body::before {
   display: block;
 }
 
+/* --- SFX play grid (audio page) ------------------------------------------ */
+.sfx-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 1.25rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sfx-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--grey-dim);
+  background: linear-gradient(180deg, var(--card-top), var(--card-bottom));
+  padding: 1.25rem 1.4rem 1.4rem;
+  text-align: left;
+  transition: border-color 0.25s var(--ease);
+}
+
+.sfx-item:hover {
+  border-color: var(--white);
+}
+
+.sfx-item-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.sfx-item h3 {
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: var(--track-tight);
+}
+
+.sfx-duration {
+  font-size: 0.65rem;
+  color: var(--grey);
+  letter-spacing: var(--track-mid);
+  white-space: nowrap;
+}
+
+.sfx-item .ph {
+  padding: 0.4rem 0 1rem;
+  font-size: 0.68rem;
+  letter-spacing: var(--track-mid);
+  text-transform: uppercase;
+}
+
+.sfx-play {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.sfx-play.is-playing {
+  background: var(--white);
+  color: var(--black);
+}
+
 /* --------------------------------------------------------------------------
    11. BLUEPRINT / SYSTEMS GRID (work/games.html)
    -------------------------------------------------------------------------- */

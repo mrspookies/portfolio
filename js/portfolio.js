@@ -14,6 +14,7 @@
     initModals();
     initFormModals();
     initAudioGuard();
+    initSfx();
   });
 
   /**
@@ -265,5 +266,67 @@
         event.preventDefault();
       });
     });
+  }
+
+  /**
+   * Play-on-command SFX buttons (audio page). Each .sfx-play[data-sfx-src]
+   * button plays its file through a single shared player, so only one effect
+   * sounds at a time; the button toggles Play/Stop and marks itself active.
+   */
+  function initSfx() {
+    var buttons = document.querySelectorAll('.sfx-play[data-sfx-src]');
+    if (!buttons.length) return;
+
+    var audio = new Audio();
+    audio.preload = 'none';
+    audio.controlsList = 'nodownload';
+
+    audio.addEventListener('ended', function () {
+      setPlaying(null);
+    });
+
+    audio.addEventListener('error', function () {
+      setPlaying(null);
+    });
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var src = btn.getAttribute('data-sfx-src');
+        if (!src) return;
+
+        if (!audio.paused && audio.currentSrc === resolveUrl(src)) {
+          audio.pause();
+          audio.currentTime = 0;
+          setPlaying(null);
+          return;
+        }
+
+        audio.src = src;
+        var promise = audio.play();
+        if (promise && promise.catch) {
+          promise.catch(function () {
+            setPlaying(null);
+          });
+        }
+        setPlaying(btn);
+      });
+
+      btn.addEventListener('contextmenu', function (event) {
+        event.preventDefault();
+      });
+    });
+
+    function resolveUrl(src) {
+      var a = document.createElement('a');
+      a.href = src;
+      return a.href;
+    }
+
+    function setPlaying(btn) {
+      buttons.forEach(function (b) {
+        b.classList.toggle('is-playing', b === btn);
+        b.textContent = b === btn ? 'Stop' : 'Play';
+      });
+    }
   }
 })();
