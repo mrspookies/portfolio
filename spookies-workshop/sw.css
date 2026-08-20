@@ -53,7 +53,6 @@ body.sw-site::after {
   display: block;
   width: min(42vw, 700px);
   height: auto;
-  filter: grayscale(1) contrast(1.05);
 }
 
 .sw-nav {
