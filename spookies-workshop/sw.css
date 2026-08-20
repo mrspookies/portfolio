@@ -44,9 +44,9 @@ body.sw-site::after {
 }
 
 .sw-logo-frame {
-  border: 1px solid var(--white);
-  padding: 0.75rem;
-  background: var(--card-top);
+  border: 0;
+  padding: 0;
+  background: none;
 }
 
 .sw-logo-frame img {
