@@ -6,88 +6,112 @@
   <title>Prototypes — Spookies Workshop</title>
   <meta name="description" content="Experimental builds and prototypes from Spookies Workshop">
   <link rel="stylesheet" href="../css/portfolio.css">
-  <link rel="stylesheet" href="../spookies-workshop/sw.css">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; media-src 'self' https:; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://bandcamp.com https://w.soundcloud.com; connect-src 'self' http://localhost:3123 https://formsubmit.co; object-src 'none'; base-uri 'self'">
 </head>
-<body class="sw-site">
-  <header class="sw-header">
-    <div class="sw-logo-frame">
-      <img src="../../assets/image/STUDIO_LOGO_TRANSPARENT.png" alt="Spookies Workshop logo">
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a href="../index.html" class="brand">PETE WICHER</a>
+    
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <span></span>
+      </button>
+    
+      <nav class="primary-nav" id="primary-nav">
+        <ul>
+          <li><a href="../index.html">Profile</a></li>
+          <li class="nav-item open">
+            <button class="dropdown-toggle" aria-expanded="true" aria-controls="work-dropdown">
+              Work <span class="caret">&#9660;</span>
+            </button>
+            <ul class="dropdown" id="work-dropdown">
+              <li><a href="audio.html">Audio</a></li>
+              <li><a href="code.html">Code</a></li>
+              <li><a href="games.html" aria-current="page">Games</a></li>
+              <li><a href="video.html">Video</a></li>
+              <li><a href="prototypes.html">Prototypes</a></li>
+            </ul>
+          </li>
+          <li><a href="../black-box/index.html">The Black Box</a></li>
+          <li><a href="../offers/index.html">Offers & Services</a></li>
+          <li><a href="../contact/index.html">Contact</a></li>
+          <li><a href="../spookies-workshop/index.html">Spookies Workshop</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="sw-nav" aria-label="Studio">
-      <a href="#games">Games</a>
-      <a href="#collaborations">Collaborations</a>
-      <a href="contact.html">Contact</a>
-    </nav>
   </header>
-
+  
   <main>
-    <section class="sw-hero">
-      <p class="sw-stamp"><span class="rec-dot" aria-hidden="true"></span> REC &mdash; SIGNAL: LIVE &mdash; <span id="sw-time">19.08.2026</span></p>
-      <h1 class="sw-title">Spookies Workshop</h1>
-      <p class="sw-tagline">
-        An independent game studio founded on analog horror, atmosphere, and the
-        work that gets under your skin.
+    <section class="hero wrap">
+      <p class="case-number">FILE 06 / WORK / PROTOTYPES</p>
+      <h1>Experimental Builds</h1>
+      <p class="hero-lede">
+        Early prototypes and playable builds from the Spookies Workshop archives.
+        These experimental projects showcase the evolution of our analog horror
+        aesthetic and gameplay mechanics.
       </p>
-      <p class="sw-msg">This tape is currently in circulation. New transmissions are added as they surface.</p>
-      <div class="sw-hero-actions">
-        <a class="btn" href="#games">View Games</a>
-        <a class="btn btn-ghost" href="contact.html">Contact the Studio</a>
-      </div>
     </section>
-
-    <hr class="sw-rule">
-
-    <section class="sw-section" id="prototypes">
-      <div class="sw-section-head">
-        <h2>Prototypes</h2>
-        <span class="sw-stamp">EXPERIMENTAL BUILDS</span>
-      </div>
-
-      <article class="sw-card">
-        <div class="sw-card-head">
-          <h3>PROTOTYPES</h3>
-          <span class="sw-stamp">COMING SOON</span>
-        </div>
-        <p>
+    
+    <hr class="tape-rule">
+    
+    <section class="section wrap">
+      <div class="section-head">
+        <h2>Prototypes Archive</h2>
+        <p class="section-lede">
           Experimental builds and playable prototypes from Spookies Workshop's
           development archives. These early builds showcase the evolution of
           our analog horror aesthetic and gameplay mechanics.
         </p>
-        <div class="sw-links">
-          <a class="sw-link" href="#">Coming Soon &nearr;</a>
+      </div>
+      
+      <div class="sound-group">
+        <h3 class="sound-group-title">Available Prototypes</h3>
+        <div class="reel-list">
+          <article class="reel-item">
+            <div class="reel-item-head">
+              <h4>PROTOTYPE 01</h4>
+              <span class="reel-duration">Coming Soon</span>
+            </div>
+            <p class="ph">First experimental build - details forthcoming</p>
+          </article>
+          <article class="reel-item">
+            <div class="reel-item-head">
+              <h4>PROTOTYPE 02</h4>
+              <span class="reel-duration">Coming Soon</span>
+            </div>
+            <p class="ph">Second experimental build - details forthcoming</p>
+          </article>
+          <article class="reel-item">
+            <div class="reel-item-head">
+              <h4>PROTOTYPE 03</h4>
+              <span class="reel-duration">Coming Soon</span>
+            </div>
+            <p class="ph">Third experimental build - details forthcoming</p>
+          </article>
         </div>
-      </article>
-    </section>
-
-    <hr class="sw-rule">
-
-    <section class="sw-section">
-      <div class="sw-section-head">
-        <h2>Contact</h2>
-      </div>
-      <p>
-        Reaching the studio is a direct line &mdash; no phone trees, no runaround.
-        Send the project details and the studio gets back to you.
-      </p>
-      <div class="sw-hero-actions">
-        <a class="btn" href="contact.html">Open Contact Form &nearr;</a>
-        <a class="btn btn-ghost" href="../index.html">Portfolio &nearr;</a>
       </div>
     </section>
+    
+    <hr class="solid-rule">
   </main>
-
-  <footer class="sw-footer">
-    <p class="sw-stamp">END OF TRANSMISSION</p>
-    <nav class="sw-nav" aria-label="Studio footer">
-      <a href="https://mister-spookies.itch.io/" target="_blank" rel="noopener">itch.io</a>
-      <a href="https://petewicher.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a>
-      <a href="https://www.youtube.com/@MisterSpookies" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://x.com/MisterSpookies" target="_blank" rel="noopener">X</a>
-    </nav>
-    <p class="sw-msg" style="margin-top:1.25rem;">&copy; <span id="year"></span> Spookies Workshop. All rights reserved.</p>
+  
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="footer-note">&copy; <span id="year"></span> Pete Wicher. All rights reserved.</p>
+      <nav class="footer-links">
+        <a href="../offers/index.html">Start a Project</a>
+        <a href="../black-box/index.html">The Black Box</a>
+        <a href="../contact/index.html">Contact</a>
+      </nav>
+      <nav class="footer-socials">
+        <a href="https://mister-spookies.itch.io/" target="_blank" rel="noopener">itch.io</a>
+        <a href="https://petewicher.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a>
+        <a href="https://www.youtube.com/@MisterSpookies" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://x.com/MisterSpookies" target="_blank" rel="noopener">X</a>
+      </nav>
+    </div>
   </footer>
-
-  <script src="../../js/portfolio.js"></script>
+  
+  <script src="../js/portfolio.js"></script>
 </body>
 </html>
