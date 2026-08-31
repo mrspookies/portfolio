@@ -7,6 +7,14 @@
 (function () {
   'use strict';
 
+// CONFIGURATION — set the base API URL for the backend.
+//   - In development, this should match the port your Node backend runs on.
+//   - In production, set this to your deployed API base (e.g. https://example.com/api).
+//   - If left as '/', the script will auto-detect the current origin.
+//   - WHEN USING LIVE SERVER ON A DIFFERENT PORT, set THIS to 'http://localhost:3123/api'
+//     so the Black Box page can fetch posts even when served from a different origin.
+  var API_BASE = '/api';  // CHANGE THIS if your backend runs on a different origin/port
+
   var stackEl = document.querySelector('.log-stack');
   var countEl = document.getElementById('log-count');
   if (!stackEl) return;
@@ -16,11 +24,20 @@
     'https://player.vimeo.com/video/',
   ];
 
-  var SOURCES = [
-    '/api/posts',                       // served by the backend (same origin)
-    'http://localhost:3123/api/posts',  // served by Live Server / file:// (CORS)
-    '/data/posts.json',                 // static mirror, works on any static host
-  ];
+  // Build the three fetch sources for the Black Box post feed.
+  // Source 1: relative to current origin (e.g. /api/posts when served from http://localhost:3123)
+  // Source 2: explicit localhost fallback — ALWAYS points to http://localhost:3123/api/posts
+  //   This is the key fix: ensures the Black Box page can always fetch posts
+  //   even when served from a different origin (e.g. Live Server on port 5500, file://).
+  // Source 3: static mirror at /data/posts.json — works on any static host
+  function buildSources() {
+    var source1 = '/api/posts';
+    var source2 = 'http://localhost:3123/api/posts';
+    var source3 = '/data/posts.json';
+    return [source1, source2, source3].filter(function (s) { return s; });
+  }
+
+  var SOURCES = buildSources();
 
   function fetchJson(url) {
     return fetch(url).then(function (res) {
