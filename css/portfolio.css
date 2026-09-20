@@ -738,17 +738,21 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--black);
+background: var(--black);
     flex-direction: column;
     align-items: flex-start;
     padding: 2rem var(--gutter);
-    transform: translateX(100%);
-    transition: transform 0.3s var(--ease);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s var(--ease), visibility 0.3s;
     overflow-y: auto;
   }
 
   .primary-nav.open {
-    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .primary-nav > ul {
@@ -1624,4 +1628,185 @@ body.modal-open {
   font-size: 0.72rem;
   letter-spacing: var(--track-mid);
   text-transform: uppercase;
+}
+
+/* ------------------------------------------------------------------ */
+/*  PITCH DECK PAGE-IMAGE STRIPS + FULL-SCREEN VIEWER (services/pitch-deck.html)
+/* ------------------------------------------------------------------ */
+.deck-strip {
+  max-height: 400px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  background: var(--black);
+  border: 1px solid var(--grey-dim);
+  padding: 0.75rem;
+  scrollbar-color: var(--grey) var(--black);
+}
+
+.deck-strip img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--grey-dim);
+  cursor: zoom-in;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.deck-hint {
+  margin: 0.5rem 0 0;
+  font-size: 0.74rem;
+  color: var(--grey);
+  text-transform: uppercase;
+  letter-spacing: var(--track-mid);
+}
+
+.deck-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1300;
+  display: none;
+}
+
+.deck-lightbox.is-open {
+  display: block;
+}
+
+.deck-lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(3px);
+}
+
+.deck-lightbox-panel {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem clamp(0.5rem, 2vw, 2.5rem);
+}
+
+.deck-lightbox-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--grey-dim);
+}
+
+.deck-lightbox-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: var(--track-mid);
+  color: var(--white);
+}
+
+.deck-lightbox-close {
+  background: none;
+  border: 1px solid var(--grey-dim);
+  color: var(--white);
+  font-size: 1.4rem;
+  line-height: 1;
+  width: 2.25rem;
+  height: 2.25rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.deck-lightbox-close:hover,
+.deck-lightbox-close:focus-visible {
+  background: var(--grey-dim);
+}
+
+.deck-lightbox-body {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.deck-lightbox-body img {
+  display: block;
+  width: 100%;
+  max-width: min(1400px, 100%);
+  height: auto;
+  border: 1px solid var(--grey-dim);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+body.deck-lightbox-open {
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   18. PROTOTYPE DOWNLOAD CARDS (work/prototypes.html)
+   -------------------------------------------------------------------------- */
+.proto-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .proto-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .proto-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+a.blueprint-media.proto-media {
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--grey);
+}
+
+.proto-media img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  flex: 1 1 auto;
+  min-height: 0;
+  object-fit: contain;
+  transition: transform 0.25s var(--ease);
+}
+
+.proto-media:hover img {
+  transform: scale(1.04);
+}
+
+.proto-hint {
+  font-size: 0.6rem;
+  letter-spacing: var(--track-mid);
+  text-transform: uppercase;
+  color: var(--grey-dim);
+  transition: color 0.25s var(--ease);
+}
+
+.proto-media:hover .proto-hint {
+  color: var(--white);
+}
+
+.proto-warning {
+  margin-top: 1rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--grey-dim);
+  border-left: 3px solid var(--grey);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--grey);
+  margin-bottom: 0;
 }
