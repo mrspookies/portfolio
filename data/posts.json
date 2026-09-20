@@ -1,5 +1,124 @@
 [
   {
+    "id": 22,
+    "entryNumber": 8,
+    "category": "Industry",
+    "title": "The Past",
+    "body": [
+      "The past has a nasty way of rearing its head when you least expect it. The trick is, especially when it's people from your past who have done you wrong, to look them square in the eye and own YOUR OWN part in why things went sour.",
+      "I've made a LOT of mistakes in my life. I chose the wrong path so many times that when I ended up on a good part of the road, it still felt like I was lost. It wasn't until I met my wife that things began to feel different. I've seen some really dark times and some really good times... and sometimes I've been in bad situations with good people and in fantastic situations with the wrong crowd.",
+      "Guess I'm just feeling nostalgic for a time when life wasn't moving so fast."
+    ],
+    "images": [],
+    "audio": null,
+    "videoEmbed": null,
+    "videoOriginal": null,
+    "createdAt": "2026-09-15T22:15:13.656Z",
+    "updatedAt": "2026-09-15T22:15:13.656Z"
+  },
+  {
+    "id": 21,
+    "entryNumber": 7,
+    "category": "Misc",
+    "title": "Closer",
+    "body": [
+      "Developing a game solo is scary, but it has also been incredibly rewarding.",
+      "I can't express it enough grateful I am for friends who have supported me through this. I want to mention Nightwolf Games as one of the main reasons I'm even still trying this. Without their help, one of the CORE elements of Egregore would not have happened...",
+      "Sometimes, I need reminding that there are good people out there who truly want to see others win, and I'm very blessed to have a few of those folks in my corner...",
+      "I know I've been rambling a lot in these posts about things that seem unrelated to developing a game... but I believe in time, it will all become apparent...",
+      "October is getting closer. Time to work.",
+      "Spooks out."
+    ],
+    "images": [
+      "/media/2026/09/1789186237144-98a7dd85.png"
+    ],
+    "audio": null,
+    "videoEmbed": null,
+    "videoOriginal": null,
+    "createdAt": "2026-09-12T04:10:37.145Z",
+    "updatedAt": "2026-09-12T04:10:37.145Z"
+  },
+  {
+    "id": 20,
+    "entryNumber": 6,
+    "category": "Tools & Pipeline",
+    "title": "Egregore",
+    "body": [
+      "Egregore is a strange concept. It is an entity given form by belief and attention. If that seems like too highbrow a concept, I'll break it down in simple terms.",
+      "An egregore ONLY exists if you give it energy... meaning, do you believe in whatever it is. It's an occult concept describing a distinct, autonomous psychic entity born from \"group-think\". Everyone worries about \"the boogeyman\", and that worry gives birth to the manifestation of that very boogeyman, not as a concept but as a real force with the ability to affect the world around it.",
+      "Egregores CAN be born of individual thought and belief, although the literature becomes murky on this point... is it really a manifested creature or is it a pre-existing entity that slips into whatever mold the thoughts are giving it?",
+      "In this way, the game/experience that I'm building is actually manifesting in that way. The more \"belief\" I've poured into the project, the faster it grows. At the beginning of this year, I was mere weeks away from launching the demo... when my belief was shaken, and I cut off the energy given to the project. The Egregore (game) died... or maybe it just went back into hibernation.",
+      "Now... it is \"reborn\", as it were. Scoping has become the main focus to finish a brand NEW demo for Steam Next-Fest in October. I pray that it happens. I'm feeding it the energy. Others have fed it as well, growing it into something I always wanted, but never dreamed could happen.",
+      "It's coming... Will YOU believe?",
+      "Spooks out..."
+    ],
+    "images": [
+      "/media/2026/09/1789052257254-01c1eb6e.png"
+    ],
+    "audio": null,
+    "videoEmbed": "https://www.youtube.com/embed/hIJ15Qz13aY",
+    "videoOriginal": "https://youtu.be/hIJ15Qz13aY?si=wBVOqNwDpKsALOCx",
+    "createdAt": "2026-09-10T14:57:37.255Z",
+    "updatedAt": "2026-09-10T14:57:37.255Z"
+  },
+  {
+    "id": 19,
+    "entryNumber": 5,
+    "category": "Systems Design",
+    "title": "Belief",
+    "body": [
+      "Belief is a weird thing to try and elucidate as a game system. You either do or don't. It's a boolean, not a \"float\" variable. Yes, or no. Each action adds to the overall score, or detracts from it. Hitting thresholds in either direction results in events being triggered, clues being revealed, and a sense of either uncertainty or confidence that you're following the correct path.",
+      "Right now, I BELIEVE in the system I'm designing, or rather... the plugin FOR the system that will allow development to move along at the speed of light. I hope that once it's done, tested, and working, that many young devs will use it to LEARN the art of game design, and tell their own stories.",
+      "I'm exhausted... There's a storm coming in my own personal life that I don't know if I'm ready for. I have a few good reasons to stand strong... to BELIEVE that I will be ok. I've made the decision to keep my games small and serialized. Once the first is done and out, the others will flow much easier.",
+      "Somehow being stuck in this hallway for over a decade has only strengthened my resolve to make something of myself and of my story...",
+      "Spooks out."
+    ],
+    "images": [],
+    "audio": null,
+    "videoEmbed": null,
+    "videoOriginal": null,
+    "createdAt": "2026-09-07T23:39:22.539Z",
+    "updatedAt": "2026-09-07T23:39:22.539Z"
+  },
+  {
+    "id": 18,
+    "entryNumber": 4,
+    "category": "Industry",
+    "title": "Friendship",
+    "body": [
+      "Listen, I'm a big believer in being a good human and helping others out. It's honestly turned into a kind of running joke in my life where I go above and beyond for \"friends\" or loved ones, only to have them take advantage of me. It's a real horrible feeling to realize that the relationship you thought you had with someone is not measuring up.",
+      "Time and again I've been tricked, used, abused, ignored, mistreated and generally handled with zero care for my feelings. The kicker is that I still go out of my way, because I'm trying NOT to be someone who does that to others.",
+      "It's kind of cool to realize now that I do have a few friends who show me the same respect and appreciation I show them, and who, regardless of the situation, I have trust to be good people.",
+      "I'm grateful for those friends (You know who you are) and my ONLY regret is that we've never met face to face. God bless the internet, but also... I wish we could just hang out in person. Maybe one day.",
+      "Until then, remember: not everyone is your friend, but the ones who are show up for you exactly like you show up for them. Be good, and expect good out of those you choose to associate with. I've learned my lesson on that in the past, and I carry a healthier mentality going forward.",
+      "Spooks out!"
+    ],
+    "images": [],
+    "audio": null,
+    "videoEmbed": null,
+    "videoOriginal": null,
+    "createdAt": "2026-09-04T18:16:00.951Z",
+    "updatedAt": "2026-09-04T18:16:00.951Z"
+  },
+  {
+    "id": 17,
+    "entryNumber": 3,
+    "category": "Code",
+    "title": "Coding... Like in the Sci-Fi movies...",
+    "body": [
+      "I'm legitimately feeling like the star of an 80's or 90's tech \"hacker\" movie... with a pinch of Star Trek: TNG.",
+      "\"Computer... fix my life...\" and it just DOES.",
+      "Modern coding assistants and agents are WILD stuff.",
+      "That being said, it is IMPERATIVE that you LEARN to code without them, and then add them in to get superpowers. Truly wild technology, and I know it's only going to get crazier over the next few years."
+    ],
+    "images": [],
+    "audio": null,
+    "videoEmbed": null,
+    "videoOriginal": null,
+    "createdAt": "2026-09-03T16:56:29.436Z",
+    "updatedAt": "2026-09-03T16:56:29.436Z"
+  },
+  {
     "id": 15,
     "entryNumber": 2,
     "category": "Misc",
