@@ -1257,6 +1257,31 @@ background: var(--black);
   align-self: center;
 }
 
+.tier-price {
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+  letter-spacing: var(--track-mid);
+  color: var(--white);
+  margin-top: auto;
+  padding-top: 1.25rem;
+}
+
+.tier-note {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--grey);
+}
+
+.tier-turnaround {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.68rem;
+  letter-spacing: var(--track-mid);
+  text-transform: uppercase;
+  color: var(--grey);
+}
+
 /* --------------------------------------------------------------------------
    MODAL WINDOWS (offers page) — floating dossier cards
    -------------------------------------------------------------------------- */
