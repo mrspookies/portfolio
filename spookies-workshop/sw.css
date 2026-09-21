@@ -137,6 +137,10 @@ body.sw-site::after {
   gap: 0.85rem;
 }
 
+.sw-hero .sw-nav {
+  margin-top: 2rem;
+}
+
 @keyframes sw-flicker {
   0%, 100% { opacity: 1; }
   90% { opacity: 1; }
